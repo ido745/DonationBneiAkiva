@@ -3,9 +3,10 @@
 <html dir="rtl" lang="he">
 <head>
     <meta charset="UTF-8">
-    <title>Donate</title>
+    <title>בני עקיבא שוק פורים</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="homepage">
         <!-- <ul>
@@ -15,16 +16,38 @@
             <li>Services</li>
             <li>Contact</li>
         </ul> -->
-        
-        <h2>בני עקיבא תקוע - מבצע תרומות</h2>
-        <h1><center>לכבוד חג הפורים, החלטנו לארגן שוק פורים המיועד לשמח ילדים ונערים עם מוגבלויות. בשביל לקבל תרומות, החלטנו לבצע הגרלה.</center></h1>
-        <h1><center> בכדי להיכנס להגרלה, צריכים לשלם סכום סמלי של ₪10. בהגרלה פרסים רבים כמו בוקסה, אוהל, קורקינט חשמלי ועוד ועוד..</center></h1>
-        <h1><center>אז למה את מחכים? רוצו לתרום! :)</center></h1>
-
-
-        <div style="text-align: center; line-height:200px">
-	<a href="https://payboxapp.page.link/KKLCB6r1f7foNeFs5" target="_blank"><img src="https://play-lh.googleusercontent.com/YHAFMMoUY8XOSCZhJoSkVM3ilpK1nQcwoZLa0SgiHwZpZkRwNrPnqMOkNKtLjB2AogfG" width="225" height="105" align="absbottom"/></a>
+        <section>
+		<h2>בני עקיבא - מבצע תרומות</h2>
+		<div class="row">
+			<div class="column">
+				<img src="http://bneiakiva.org.il//wp-content/uploads/2013/11/semel-ba.png" width="50%" height=auto;/>
+				</div>
+			<div class="column">
+				<div style="text-align: center; line-height:-200px">
+				<a href="https://payboxapp.page.link/KKLCB6r1f7foNeFs5" target="_blank"><img src="https://play-lh.googleusercontent.com/YHAFMMoUY8XOSCZhJoSkVM3ilpK1nQcwoZLa0SgiHwZpZkRwNrPnqMOkNKtLjB2AogfG" width="225" height="105"/></a>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<img src="https://www.kovalentcoatings.com/wp-content/uploads/2021/06/scroll_animation.gif" width="10%" class="ribbon"/>
+		</div>
+		</section>
+		
+<section>
+	<div class="container reveal">
+		<h2>מה הרעיון?</h2>
+		<h1><center>לכבוד חג הפורים, אנחנו, נוער תקוע, החלטנו לארגן שוק פורים המיועד לשמח ילדים ונערים עם מוגבלויות. בשביל לקבל תרומות, החלטנו לבצע הגרלה</center></h1>
 	</div>
+	<div class="container reveal">
+		<h2>אני בעד, איך נכנסים?</h2>
+		<h1><center> בכדי להיכנס להגרלה, צריכים לשלם סכום סמלי של ₪10. ברגע שתרמת אתה תירשם להגרלה אוטומטית.</center></h1>
+	</div>
+	<div class="container reveal">
+		<h2>מה אני מרוויח מכל הסיפור?</h2>
+		<h1><center>חוץ מלשמח ילדים ונערים מוגבלים, ברגע שתרמת יש לך סיכוי לזכות במגוון פרסים, כגון אוהל, בוקסה, קורקינט חשמלי, ועוד!</center></h1>
+	</div>
+
+</section>
     </div>
     
     <div class="boxes">
@@ -59,8 +82,12 @@
     width:100%;
     min-width:1000px;
     height:auto;
-    }
+	}
 	
+	p {
+    font-size: 4vw;
+}
+
   @media (prefers-color-scheme: dark) {
     body {
       background-color: black;
@@ -79,6 +106,43 @@
   }
 }
 
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 1px;
+}
+
+#content {
+    position: relative;
+}
+#content img {
+	position: absolute;
+	bottom: -5vh;
+	right: -50vh;
+}
+
 body{
   background: #2c3e50;
 }
@@ -88,9 +152,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
-body {
-	font-family: lato;
-}
+
 .homepage {
 	width: 100%;
 	position: absolute;
@@ -110,6 +172,7 @@ body {
 	cursor: pointer;
 	font-weight: 900;
 }
+
 .homepage h1 {
   line-height: 1.0;
 	color: #fff;
@@ -127,7 +190,7 @@ body {
 	font-weight: 900;
 }
 .boxes {
-	background: linear-gradient(to top, #2c3e50 0%, #fd746c 100%);
+	background: linear-gradient(to top, #283846 0%, #fd746c 100%);
 	width: 100%;
 	height: 100vh;
 }
@@ -196,6 +259,9 @@ body {
 }
 img {
   border-radius: 8px;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
 }
 @keyframes animate {
 	0% {
@@ -208,6 +274,110 @@ img {
 	}
 }
 
+/* test code */
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #2c3e50;
+}
+section{
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+  color: #e0ffff;
+  }
+section:nth-child(2){
+  color: #42455a;
+  background: #2c3e50;
+} 
+section:nth-child(3){
+  color: #e0ffff;
+}
+section:nth-child(4){
+  color: #42455a;
+  background: #2c3e50;
+}
+section .container{
+  margin: 100px;
+}
+section h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container{
+   display: flex;
+}
+section .text-container .text-box{
+  margin: 20px;
+  padding: 20px;
+  background: #2c3e50;
+}
+section .text-container .text-box h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 </style>
 </body>
 </html>
+
+<script type = "text/javascript">
+function reveal() {
+	var reveals = document.querySelectorAll(".reveal");
+
+	for (var i = 0; i < reveals.length; i++) {
+		var windowHeight = window.innerHeight;
+		var elementTop = reveals[i].getBoundingClientRect().top;
+		var elementVisible = 150;
+
+		if (elementTop < windowHeight - elementVisible) {
+			reveals[i].classList.add("active");
+		} else {
+			reveals[i].classList.remove("active");
+		}
+	}
+}
+
+window.addEventListener("scroll", reveal);
+</script>
